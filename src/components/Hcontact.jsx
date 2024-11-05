@@ -13,7 +13,7 @@ export const Hcontact = () => {
         const formData = { name, phone, service, email };
 
         try {
-            const response = await fetch('https://manjusmakeover.onrender.com', {
+            const response = await fetch('https://manjusmakeover.onrender.com/api/send_email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
