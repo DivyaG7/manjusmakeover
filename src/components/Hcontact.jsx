@@ -76,12 +76,12 @@ export const Hcontact = () => {
                                             required
                                         >
                                             <option value="">Service Needed</option>
-                                            <option value="bridal">Muhurtham Makeup</option>
-                                            <option value="party">Reception Makeup</option>
-                                            <option value="photoshoot">Engagement Makeup</option>
-                                            <option value="special_event">Pre-Wedding Makeup</option>
-                                            <option value="special_event">Post-Wedding Makeup</option>
-                                            <option value="special_event">Party Makeup</option>
+                                            <option value="Muhurtham Makeup">Muhurtham Makeup</option>
+                                            <option value="Reception Makeup">Reception Makeup</option>
+                                            <option value="Engagement Makeup">Engagement Makeup</option>
+                                            <option value="Pre-Wedding Makeup">Pre-Wedding Makeup</option>
+                                            <option value="Post-Wedding Makeup">Post-Wedding Makeup</option>
+                                            <option value="Party Makeup">Party Makeup</option>
                                         </select>
                                         <input
                                             type="email"
