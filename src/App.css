@@ -350,3 +350,34 @@ button {
   font-size: 14px;
   margin: 0;
 }
+
+
+/* About page style */
+
+.About-section{
+  color: white;
+}
+
+.About-section h1{
+  font-weight: bold;
+}
+
+
+.About-section p{
+  font-weight: 600;
+}
+
+.About-section .circle-arrow {
+  width: 40px;              /* Set the width of the circle */
+  height: 40px;             /* Set the height of the circle */
+  color: white;             /* Color for the arrow */
+  font-size: 20px;          /* Font size for the arrow */
+  font-weight: 200;
+  border-radius: 50%;       /* Make it a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow if desired */
+  cursor: pointer;          /* Pointer cursor on hover */
+}
