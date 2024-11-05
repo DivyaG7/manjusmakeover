@@ -23,7 +23,7 @@ export const Hcontact = () => {
 
             const data = await response.json();
             if (response.ok) {
-                setMessage('Email sent successfully!');
+                setMessage('Your request has been received! We’ll be in touch soon.');
             } else {
                 setMessage('Failed to send email: ' + data.message);
             }
