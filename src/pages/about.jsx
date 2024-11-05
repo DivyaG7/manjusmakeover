@@ -64,7 +64,7 @@ export const About = () => {
             <section className='About-section'>
                 <img src={aboutImage} alt='aboutImage' className='img-fluid' />
 
-                <div className='mt-5 text-center'>
+                <div className='mt-5 text-center pe-3 ps-3'>
                     <h1>About <span style={{ color: '#B2984A' }}>Manjus Makeover</span> Artistry</h1>
 
                     <p className='mt-2'>Renowned Bridal Makeup Artist in Chennai</p>
@@ -86,10 +86,10 @@ export const About = () => {
                             <div className='row'>
                                 <div className='col-md-6'>
                                     <div className='row'>
-                                        <div className='col-md-6'>
+                                        <div className='col-md-6 mb-4'>
                                             <img src={about1} alt='about-page-image' className='img-fluid' />
                                         </div>
-                                        <div className='col-md-6 d-flex flex-column'>
+                                        <div className='col-md-6 d-flex flex-column mb-4 gap-4'>
                                             <div className=''>
                                                 <img src={about2} alt='about-page-image' className='img-fluid' />
                                             </div>
