@@ -1,7 +1,20 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar .navbar-nav{
+        margin-top: 20px;
+    }
+
     .hero-section {
         padding: 10rem 2rem !important;
         margin: 0 !important;
+        width: 100% !important;
+    }
+
+    #fircom .about-image{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #fircom .about-image > .col-md-6{
         width: 100% !important;
     }
 }
@@ -10,6 +23,10 @@
 
     .navbar {
         width: 90vw !important;
+    }
+
+    .navbar .navbar-nav{
+        margin-top: 20px;
     }
 
     .hero-section {
@@ -97,6 +114,18 @@
         }
     }
 
+
+    #fircom .about-image .about-nested{
+        width: 100%;
+    }
+
+    #fircom .about-image .about-nested > .col-md-6{
+        width: 50% !important;
+    }
+
+    .about-last h4{
+        width: 100% !important;
+    }
 }
 
 
@@ -141,6 +170,17 @@
         /* Set a fixed height for all images */
         object-fit: cover;
         /* Ensure the image covers the area without distortion */
+    }
+
+    #fircom .about-image .about-nested{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    #fircom .about-image .about-nested > .col-md-6{
+        width: 100% !important;
     }
 
 }

@@ -7,11 +7,11 @@ export const Habout = () => {
             <section className="h-about mb-4">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-md-6" data-aos="fade-right">
                             <img src={home_about_bg} alt="home-about_bg" className="img-fluid" />
                         </div>
 
-                        <div className="col-md-6 h-about-detail">
+                        <div className="col-md-6 h-about-detail" data-aos="fade-left">
                             <h3>ABOUT US</h3>
 
                             <p className="mt-4">At Manjus Makeover Artistry, we specialize in bridal makeup in <span

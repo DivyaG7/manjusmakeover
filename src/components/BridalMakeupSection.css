@@ -1,0 +1,36 @@
+/* BridalMakeupSection.css */
+.box-muhurtham {
+    background-image: url('../assets/Muhurtham Bridal Makeup.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.box-reception {
+    background-image: url('../assets/Reception Bridal Makeup.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.box-engagement {
+    background-image: url('../assets/Engagement Makeup.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.box-prewedding {
+    background-image: url('../assets/Pre-Wedding Makeup.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.box-postwedding {
+    background-image: url('../assets/Post-Wedding Makeup.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.box-party {
+    background-image: url('../assets/Party Makeup.png');
+    background-size: cover;
+    background-position: center;
+}

@@ -179,6 +179,7 @@ button {
 
 .testimonials{
   color: white;
+  background: #17161E;
 }
 
 .testimonials {
@@ -356,6 +357,7 @@ button {
 
 .About-section{
   color: white;
+  background: #17161E;
 }
 
 .About-section h1{
@@ -367,17 +369,66 @@ button {
   font-weight: 600;
 }
 
-.About-section .circle-arrow {
-  width: 40px;              /* Set the width of the circle */
-  height: 40px;             /* Set the height of the circle */
-  color: white;             /* Color for the arrow */
-  font-size: 20px;          /* Font size for the arrow */
-  font-weight: 200;
-  border-radius: 50%;       /* Make it a circle */
+.whychoose{
+  background: #17161E;
+}
+
+.whychoose .makeup{
+  background: black;
+}
+
+.whychoose .makeup h4{
+  color: #B2984A;
+  font-weight: bold;
+}
+
+.whychoose .makeup-img{
+  background-image: url('assets/whychoose_img.png');
+  background-position: center;
+  background-size: cover;
+  color: white;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow if desired */
-  cursor: pointer;          /* Pointer cursor on hover */
+  align-items: end;
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.whychoose .makeup-img h2{
+  font-weight: bold;
+}
+
+/* Service page style */
+
+.service-section{
+  color: white;
+  background: #17161E;
+}
+
+.service-section h1{
+  font-weight: bold;
+}
+
+
+.service-section p{
+  font-weight: 600;
+}
+
+.nextcom h3{
+  color: white;
+  font-weight: bold;
+}
+
+.service-last{
+  background-image: url('assets/service-last.png');
+  background-position: center;
+  background-size: cover;
+}
+
+/* Contact page style */
+
+.contact-section{
+  background-image: url(assets/h-service.png);
+  background-position: center;
+  background-size: cover;
+  min-width: 100%;
 }

@@ -7,7 +7,7 @@ export const Testimonial = () => {
         <div>
             <section className="testimonials">
                 <div className="container mt-5 mb-5 text-center">
-                    <h3 style={{ fontWeight: '700' }}>Testimonials</h3>
+                    <h3 style={{ fontWeight: '700' }} data-aos="fade-right">Testimonials</h3>
                     <p className="mt-4 pe-5 ps-5" style={{ fontWeight: 'semibold' }}>
                         <span style={{ color: '#B2984A' }}>What Our Brides in Chennai and Tamil Nadu Are Saying!</span>
                         Our clients’ happiness is our greatest reward! Hear from brides and clients across Chennai and Tamil

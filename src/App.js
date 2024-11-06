@@ -8,8 +8,23 @@ import { Service } from './pages/service';
 import { Gallery } from './pages/gallery';
 import { Contact } from './pages/contact';
 import { Footer } from './components/Footer';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function App() {
+
+    // Initialize AOS on page load
+    useEffect(() => {
+      AOS.init({
+        duration: 1000, // Animation duration (ms)
+        easing: 'ease-out', // Animation easing
+        every: true, // Triggers animation only once
+      });
+    }, []);
+
+    
   return (
     <div className="App">
       <Router>
