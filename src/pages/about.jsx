@@ -122,7 +122,7 @@ export const About = () => {
                                         <li>Camera-ready</li>
                                     </ul>
 
-                                    <button className='mb-4'>Get Quote</button>
+                                    <a href="/Contact"><button className='mb-4'>Get Quote</button></a>
                                 </div>
                             </div>
                         </div>
