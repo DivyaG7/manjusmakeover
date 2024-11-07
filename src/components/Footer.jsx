@@ -20,12 +20,12 @@ export const Footer = () => {
                         <div className="col-md-3 mb-3">
                             <h5>Services</h5>
                             <ul className="list-unstyled">
-                                <li><a href="/">Muhurtham Makeup</a></li>
-                                <li><a href="/">Reception Makeup</a></li>
-                                <li><a href="/">Engagement Makeup</a></li>
-                                <li><a href="/">Pre-Wedding Makeup</a></li>
-                                <li><a href="/">Post-Wedding Makeup</a></li>
-                                <li><a href="/">Party Makeup</a></li>
+                                <li><a href="/service#bridal-makeup-1">Muhurtham Makeup</a></li>
+                                <li><a href="/service#bridal-makeup-2">Reception Makeup</a></li>
+                                <li><a href="/service#bridal-makeup-3">Engagement Makeup</a></li>
+                                <li><a href="/service#bridal-makeup-4">Pre-Wedding Makeup</a></li>
+                                <li><a href="/service#bridal-makeup-5">Post-Wedding Makeup</a></li>
+                                <li><a href="/service#bridal-makeup-6">Party Makeup</a></li>
                             </ul>
                         </div>
 

@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-scroll'
 import serviceImage from '../assets/service-image.png'
 import downbtn from '../assets/Down Button.png'
 import { BridalMakeupSection } from '../components/BridalMakeupSection'
+import { useLocation } from 'react-router-dom'
 
 export const Service = () => {
+
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+            const id = location.hash.replace('#', ''); // Remove the '#' from the hash
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' }); // Scroll to the element smoothly
+            }
+        }
+    }, [location]); 
+
     return (
         <>
             <div className='p-4' style={{ background: '#17161E' }}>
@@ -78,16 +92,16 @@ export const Service = () => {
                     </div>
 
                     <div className='d-flex justify-content-center mb-5 pb-5 pt-2'>
-                        <Link to='nextcom'><img src={downbtn} alt='Down Button' className='img-fluid w-50' /></Link>
+                        <Link to='nextcom'><img src={downbtn} alt='Down Button' className='img-fluid w-50 down-arrow-animation' /></Link>
                     </div>
 
                 </div>
             </section>
 
             <section id='nextcom' className='text-center nextcom p-4'>
-                <h3>SERVICES</h3>
-                <h6 className='mt-4' style={{ color: '#B2984A', fontWeight: '700' }}>At Manjus Makeover Artistry, we offer a variety of services designed <br></br> to make every client look their best. </h6>
-                <h6 className='mt-4' style={{ color: 'white', fontWeight: '700' }}>Our expertise in bridal makeup for Tamil Nadu brides means that each service is personalized <br></br> to suit the client’s needs, with careful attention to detail and quality.</h6>
+                <h3 data-aos="fade-right">SERVICES</h3>
+                <h6 className='mt-4' style={{ color: '#B2984A', fontWeight: '700' }} data-aos="fade-up">At Manjus Makeover Artistry, we offer a variety of services designed <br></br> to make every client look their best. </h6>
+                <h6 className='mt-4' style={{ color: 'white', fontWeight: '700' }} data-aos="fade-up">Our expertise in bridal makeup for Tamil Nadu brides means that each service is personalized <br></br> to suit the client’s needs, with careful attention to detail and quality.</h6>
 
                 <BridalMakeupSection />
             </section>

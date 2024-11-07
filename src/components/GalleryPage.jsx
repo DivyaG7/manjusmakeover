@@ -27,7 +27,7 @@ export const GalleryPage = () => {
         AOS.init({
             duration: 1000, // Animation duration
             easing: 'ease-out', // Easing style
-            once: true, // Animation happens only once
+            every: true, // Animation happens only once
         });
     }, []);
 

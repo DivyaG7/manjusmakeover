@@ -79,7 +79,7 @@ export const About = () => {
                     </div>
 
                     <div className='d-flex justify-content-center mb-5 pb-5 pt-2'>
-                        <Link to='fircom'><img src={downbtn} alt='Down Button' className='img-fluid w-50' /></Link>
+                        <Link to='fircom'><img src={downbtn} alt='Down Button' className='img-fluid w-50 down-arrow-animation' /></Link>
                     </div>
 
                 </div>
