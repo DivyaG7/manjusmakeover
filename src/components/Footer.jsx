@@ -33,8 +33,8 @@ export const Footer = () => {
                         <div className="col-md-3 mb-3">
                             <h5>Follow us on</h5>
                             <ul className="list-unstyled">
-                                <li><a href="https://www.facebook.com/">Facebook</a></li>
-                                <li><a href="https://www.instagram.com/manjus_makeover_artistry/profilecard/?igsh=YmFscjN4dDZmdzB3">Instagram</a></li>
+                                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                                <li><a href="https://www.instagram.com/manjus_makeover_artistry/profilecard/?igsh=YmFscjN4dDZmdzB3" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                                 <li><a href="https://wa.me/7010957243" target="_blank" rel="noopener noreferrer">Whatsapp</a></li>
                             </ul>
                         </div>

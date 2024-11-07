@@ -78,13 +78,13 @@ export const Contact = () => {
 
                             {/* Right: Social Media Links */}
                             <div className="d-flex">
-                                <a href="https://facebook.com" className="btn btn-link">
+                                <a href="https://facebook.com" className="btn btn-link" target="_blank" rel="noopener noreferrer">
                                     <i className="bi bi-facebook"></i>
                                 </a>
-                                <a href="https://twitter.com" className="btn btn-link">
-                                    <i className="bi bi-twitter"></i>
+                                <a href="https://wa.me/7010957243" className="btn btn-link" target="_blank" rel="noopener noreferrer">
+                                    <i className="bi bi-whatsapp"></i>
                                 </a>
-                                <a href="https://instagram.com" className="btn btn-link">
+                                <a href="https://www.instagram.com/manjus_makeover_artistry/profilecard/?igsh=YmFscjN4dDZmdzB3" className="btn btn-link" target="_blank" rel="noopener noreferrer">
                                     <i className="bi bi-instagram"></i>
                                 </a>
                             </div>
