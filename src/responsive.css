@@ -74,7 +74,7 @@
 
 
     .testimonial-box-wrapper1 {
-        animation: scroll-mobile 12s linear infinite;
+        animation: scroll1-mobile 12s linear infinite;
         /* Adjust animation duration for mobile */
         gap: 30px;
         /* Maintain the scroll effect for mobile view */
@@ -110,6 +110,19 @@
 
         100% {
             transform: translateX(-300%);
+            /* Move left by the width of 1 box */
+        }
+    }
+
+    /* Animation keyframes for mobile */
+    @keyframes scroll1-mobile {
+        0% {
+            transform: translateX(-300%);
+            /* Start position */
+        }
+
+        100% {
+            transform: translateX(0);
             /* Move left by the width of 1 box */
         }
     }
