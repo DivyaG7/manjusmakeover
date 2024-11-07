@@ -11,7 +11,7 @@ export const Habout = () => {
                             <img src={home_about_bg} alt="home-about_bg" className="img-fluid" />
                         </div>
 
-                        <div className="col-md-6 h-about-detail"  data-aos="fade-left">
+                        <div className="col-md-6 h-about-detail"  data-aos="fade-up">
                             <h3>ABOUT US</h3>
 
                             <p className="mt-4">At Manjus Makeover Artistry, we specialize in bridal makeup in <span
