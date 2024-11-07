@@ -6,7 +6,7 @@ import party from '../assets/party-makeup.png'
 export const Hservice = () => {
     return (
         <div>
-            <section className="h-service">
+            <section className="h-service pt-4">
                 <div className="container mt-5 mb-5 text-center p-3">
 
                     <h3 style={{fontWeight: '700'}} data-aos="fade-right">OUR SERVICES</h3>

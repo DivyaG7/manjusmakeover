@@ -8,7 +8,7 @@ import { Hcontact } from '../components/Hcontact'
 export const Home = () => {
     return (
         <div>
-            <header className="head">
+            <header className="head mb-4">
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <div className="container-fluid">
                         {/*  Left: Text Logo  */}
