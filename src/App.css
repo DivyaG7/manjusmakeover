@@ -236,7 +236,7 @@ button {
 
 .testimonial-box-wrapper1 {
   display: flex; /* Use flexbox for horizontal alignment */
-  animation: scroll 10s linear infinite; /* Animation for scrolling effect */
+  animation: scroll1 10s linear infinite; /* Animation for scrolling effect */
 }
 
 .testimonial-box1 {
@@ -264,12 +264,12 @@ button {
 }
 
 /* Animation keyframes for circular effect */
-@keyframes scroll {
+@keyframes scroll1 {
   0% {
-      transform: translateX(0); /* Start position */
+      transform: translateX(-33.33%); /* Start position */
   }
   100% {
-      transform: translateX(-33.33%); /* Move left by the width of 1/3 of the total testimonial width */
+      transform: translateX(0); /* Move left by the width of 1/3 of the total testimonial width */
   }
 }
 
