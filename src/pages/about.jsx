@@ -72,7 +72,7 @@ export const About = () => {
 
                     <div className='mt-5'>
                         <ul className='mb-4' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 5, listStyle: 'none' }}>
-                            <li className="underline"><Link to='/' style={{ textDecoration: 'none', color: '#B2984A' }}>Home</Link></li>
+                            <li className="underline"><a href='/' style={{ textDecoration: 'none', color: '#B2984A' }}>Home</a></li>
                             <li>{'>'}</li>
                             <li>About us</li>
                         </ul>
