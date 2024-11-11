@@ -10,7 +10,7 @@ export const Hservice = () => {
                 <div className="container mt-5 mb-5 text-center p-3">
 
                     <h3 style={{fontWeight: '700'}} data-aos="fade-right">OUR SERVICES</h3>
-                    <p className="mt-4" style={{fontWeight: 'semibold;', color: '#B2984A;'}}>Specialized Bridal and Event Makeup Services
+                    <p className="mt-4" style={{fontWeight: 'semibold', color: '#B2984A'}}>Specialized Bridal and Event Makeup Services
                         in Chennai and Tamil Nadu.</p>
                     <p style={{fontWeight: 'semibold'}}>
                         At Manjus Makeover Artistry, we offer a variety of services designed to make every client look their

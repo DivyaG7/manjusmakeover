@@ -15,10 +15,10 @@ export const Habout = () => {
                             <h3>ABOUT US</h3>
 
                             <p className="mt-4">At Manjus Makeover Artistry, we specialize in bridal makeup in <span
-                                style={{color: '#B2984A;'}}>Chennai and across Tamil Nadu,</span>
+                                style={{color: '#B2984A'}}>Chennai and across Tamil Nadu,</span>
                                 crafting timeless, elegant looks for brides and clients at every celebration. </p>
 
-                            <p className="mt-4">Whether it's your <span style={{color: '#B2984A;'}}>Muhurtham, Reception, Engagement, or
+                            <p className="mt-4">Whether it's your <span style={{color: '#B2984A'}}>Muhurtham, Reception, Engagement, or
                                 a Pre-Wedding shoot,</span> we create a
                                 personalized makeup style that enhances your natural beauty.</p>
 
