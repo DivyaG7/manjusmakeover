@@ -41,13 +41,13 @@ export const Gallery = () => {
 
                             {/* Right: Social Media Links */}
                             <div className="d-flex">
-                                <a href="https://facebook.com" className="btn btn-link" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.facebook.com/manjunagaraj21/" className="btn btn-link" target="_blank" rel="noopener noreferrer">
                                     <i className="bi bi-facebook"></i>
                                 </a>
                                 <a href="https://wa.me/7010957243" className="btn btn-link" target="_blank" rel="noopener noreferrer">
                                     <i className="bi bi-whatsapp"></i>
                                 </a>
-                                <a href="https://www.instagram.com/manjus_makeover_artistry/profilecard/?igsh=YmFscjN4dDZmdzB3" className="btn btn-link" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.instagram.com/manjus_makeover_artistry/" className="btn btn-link" target="_blank" rel="noopener noreferrer">
                                     <i className="bi bi-instagram"></i>
                                 </a>
                             </div>
