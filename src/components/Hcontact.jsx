@@ -6,13 +6,45 @@ export const Hcontact = () => {
     const [service, setService] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
+
+    const handlePhoneChange = (e) => {
+        const phoneValue = e.target.value;
+        if (/^\d*$/.test(phoneValue) && phoneValue.length <= 10) {
+            setPhone(phoneValue);
+        }
+    };
+
+    const handleEmailChange = (e) => {
+        setEmail(e.target.value);
+    };
 
     const handleSubmit = async (event) => {
         event.preventDefault();
+        console.time("Form Submit Time");
+
+        setIsLoading(true);
+
+        // Validate phone number length
+        if (phone.length !== 10) {
+            setMessage('Please enter a valid 10-digit phone number.');
+            setIsLoading(false);
+            console.timeEnd("Form Submit Time");
+            return;
+        }
+
+        // Validate email format
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            setMessage('Please enter a valid email address.');
+            setIsLoading(false);
+            console.timeEnd("Form Submit Time");
+            return;
+        }
 
         const formData = { name, phone, service, email };
 
         try {
+            console.time("API Request");
             const response = await fetch('https://manjusmakeover.onrender.com/api/send_email', {
                 method: 'POST',
                 headers: {
@@ -20,23 +52,27 @@ export const Hcontact = () => {
                 },
                 body: JSON.stringify(formData),
             });
+            console.timeEnd("API Request");
 
             const data = await response.json();
+
             if (response.ok) {
                 setMessage('Your request has been received! We’ll be in touch soon.');
+                setName('');
+                setPhone('');
+                setService('');
+                setEmail('');
             } else {
-                setMessage('Failed to send email: ' + data.message);
+                setMessage('Failed to send email: ' + (data.message || 'Unknown error.'));
             }
         } catch (error) {
             setMessage('Error: ' + error.message);
+        } finally {
+            setIsLoading(false);
+            console.timeEnd("Form Submit Time");
         }
-
-        // Clear form fields after submission
-        setName('');
-        setPhone('');
-        setService('');
-        setEmail('');
     };
+
 
     return (
         <div>
@@ -56,14 +92,16 @@ export const Hcontact = () => {
                                             onChange={(e) => setName(e.target.value)}
                                             required
                                             placeholder="Your Name"
+                                            aria-label="Name"
                                         />
                                         <input
                                             type="tel"
                                             className="form-control"
                                             value={phone}
-                                            onChange={(e) => setPhone(e.target.value)}
+                                            onChange={handlePhoneChange}
                                             required
                                             placeholder="Your Phone Number"
+                                            aria-label="Phone"
                                         />
                                     </div>
 
@@ -75,7 +113,7 @@ export const Hcontact = () => {
                                             onChange={(e) => setService(e.target.value)}
                                             required
                                         >
-                                            <option value="">Service Needed</option>
+                                            <option value="">Select Service</option>
                                             <option value="Muhurtham Makeup">Muhurtham Makeup</option>
                                             <option value="Reception Makeup">Reception Makeup</option>
                                             <option value="Engagement Makeup">Engagement Makeup</option>
@@ -87,19 +125,26 @@ export const Hcontact = () => {
                                             type="email"
                                             className="form-control"
                                             value={email}
-                                            onChange={(e) => setEmail(e.target.value)}
+                                            onChange={handleEmailChange}
                                             required
-                                            placeholder="Your Mail id"
+                                            placeholder="Your Email"
+                                            aria-label="Email"
                                         />
                                     </div>
-
-                                    {/* Column 3: Submit Button */}
-                                    <div className="col-md-4 d-flex align-items-center justify-content-center">
-                                        <button type="submit">Get Quote</button>
-                                    </div>
                                 </div>
+                                <button type="submit" className="btn btn-primary" disabled={isLoading}>
+                                    {isLoading ? 'Submitting...' : 'Submit'}
+                                </button>
+                                {message && (
+                                    <div
+                                        className={`mt-3 alert ${message.includes('Error') ? 'alert-danger' : 'alert-success'
+                                            }`}
+                                        style={{ fontSize: '16px', fontWeight: 'bold' }}
+                                    >
+                                        {message}
+                                    </div>
+                                )}
                             </form>
-                            {message && <p className="mt-3">{message}</p>} {/* Display message */}
                         </div>
                     </div>
                 </div>
