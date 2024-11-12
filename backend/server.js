@@ -33,7 +33,7 @@ app.post('/api/send_email', async (req, res) => {
 
     const mailOptions = {
         from: process.env.EMAIL_USER,
-        to: 'divyaneela75@gmail.com', // Replace with your email
+        to: 'yami.manju@gmail.com', // Replace with your email
         subject: 'New Service Quote Request',
         html: `
         <div style="font-family: Arial, sans-serif; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px;">
